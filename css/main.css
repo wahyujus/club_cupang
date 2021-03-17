@@ -1,0 +1,191 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+    background-color: #242424;
+    overflow: hidden;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+}
+
+nav h5{
+    padding: 10px;
+}
+
+nav p{
+    display: inline;
+    margin-right: 40px;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#cover {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #8c0000;
+    transform: skewX(-10deg);
+    left: -110%;
+}
+
+.sports {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.background {
+    height: 400px;
+    width: 350px;
+    z-index: 1;
+    background: #8c0000;
+}
+
+.player {
+    position: absolute;
+    height: 400px;
+    z-index: 3;
+    right: -25%;
+}
+
+.name {
+    position: absolute;
+    z-index: 2;
+    font-weight: bolder;
+    color: white;
+    font-size: 54px;
+    top: 50px;
+    left: -15%;
+}
+
+.name span {
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
+
+.details {
+    position: absolute;
+    background: white;
+    z-index: 4;
+    padding: 18px 70px;
+    font-weight: bolder;
+    top: 290px;
+    right: -20%;
+    cursor: pointer;
+    transform-origin: top left;
+}
+
+.details a {
+    transition: .7s all;
+}
+
+.details:hover a {
+    color: white;
+}
+
+.details::after {
+    content: '';
+    width: 100%;
+    background: #ffbe0f;
+    display: block;
+    position: absolute;
+    height: 4px;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: .7s all;
+}
+
+.details:hover::after {
+    height: 100%;
+}
+
+.container2 {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.blue_bg{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background: #8c0000;
+}
+
+.main_content {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background: #242424;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.event_details {
+    color: white;
+    font-size: 100px;
+    letter-spacing: 5px;
+    opacity: 0.1;
+    padding-top: 40px;
+}
+
+.card_content {
+    width: 70%;
+    border-top: 5px solid #E13852;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: white;
+    padding: 50px;
+    height: 100%;
+    color: #339AFD;
+}
+
+.card_content h2, p {
+    padding: 10px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
